@@ -1,9 +1,17 @@
-package com.example.member.dto;
+package com.example.library.member.dto;
 
-public class MemberPostDto {
+public class MemberPatchDto {
+    private long memberId;
     private String name;
     private String phone;
-    private String email;
+
+    public long getMemberId() {
+        return memberId;
+    }
+
+    public void setMemberId(long memberId) {
+        this.memberId = memberId;
+    }
 
     public String getName() {
         return name;
@@ -19,13 +27,5 @@ public class MemberPostDto {
 
     public void setPhone(String phone) {
         this.phone = phone;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
     }
 }
